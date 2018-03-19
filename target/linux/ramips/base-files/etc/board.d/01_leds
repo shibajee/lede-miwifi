@@ -226,6 +226,9 @@ miniembplug)
 	set_wifi_led "$board:red:wlan"
 	set_usb_led "$board:green:mobile"
 	;;
+xiaomi,miwifi-r3)
+	ucidef_set_led_default "power" "power" "$board:blue:status" "1"
+	;;
 miwifi-mini)
 	ucidef_set_led_default "power" "power" "$board:red:status" "1"
 	;;
